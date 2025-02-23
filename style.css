@@ -13,9 +13,21 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 15px;
-    background: rgb(224, 62, 194);
+    background-image: url(lightbg.jpg);
+}
+.togglebutton {
+    background-color: rgb(163, 161, 161);
+    color: rgba(0, 0, 0, 0.63);
+    font-family: Arial, sans-serif;
+    text-align: end;
+    padding: 100px;
+    transition: background-color 0.3s, color 0.5s;
 }
 
+.dark-mode {
+    background-image: url(darkbg.jpg);
+    color: rgb(5, 5, 5);
+}
 .conf-container {
     display: none;
     display: block;
