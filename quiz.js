@@ -1,3 +1,4 @@
+// THEME BUTTON
 const toggleButton = document.getElementById("toggleButton");
 
 toggleButton.addEventListener("click", () => {
@@ -20,3 +21,24 @@ window.onload = () => {
         document.body.classList.add("dark-mode");
     }
 };
+
+// AUDIO BUTTON
+var audio = document.getElementById("customAudio");
+        var isPaused = false; 
+    
+        function playAudio() {
+            isPaused = false; 
+            audio.play();
+        }
+    
+        function pauseAudio() {
+            isPaused = true; 
+            audio.pause();
+        }
+    
+        audio.addEventListener("ended", function () {
+            if (!isPaused) {
+                this.currentTime = 0;
+                this.play(); 
+            }
+        });
