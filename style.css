@@ -123,7 +123,7 @@ body {
 }
 
 .conf-container .startquiz:hover,
-.quiz-footer .next-ques:hover
+.quiz-footer .next-ques:hover,
 .result-container .try-again:hover {
     background: #403795;
 }
@@ -257,9 +257,9 @@ body {
     font-weight: 500;
     margin-top: 15px;
 }
-.result-container .try-gain{
-margin-top: 30px;
-padding: 12px 20px;
+.result-container .try-again{
+    margin-top: 30px;
+    padding: 12px 20px;
 }
 .fade-transition {
     transition: background-image 0.5s ease-in-out, color 0.5s ease-in-out;
@@ -272,4 +272,8 @@ padding: 12px 20px;
 }
 #toggleButton {
     margin-left: auto; 
+}
+
+.timeout-container {
+    display: none;
 }

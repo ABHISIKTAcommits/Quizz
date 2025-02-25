@@ -11,9 +11,9 @@ Quizz/
 │ └── puzzle-game-bright-casual-video-game-music-249202.mp3
 ├── public/
 │ └── assets/
-│ ├── darkbg.jpg
-│ ├── lightbg.jpg
-│ └── quiz-over.png
+│   ├── darkbg.jpg
+│   ├── lightbg.jpg
+│   └── quiz-over.png
 └── README.md
 ```
 
