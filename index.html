@@ -12,6 +12,14 @@
 </head>
 
 <body>
+    <audio id="customAudio">
+        <source src="audio/puzzle-game-bright-casual-video-game-music-249202.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="audio-player">
+        <button id="audio-button" onclick="playAudio()">▶ Play</button>
+        <button id="audio-button" onclick="pauseAudio()">⏸ Pause</button>
+    </div>
     <div class="conf-container">
         <h2 class="conf-title">QUIZ CONFIG<button id="toggleButton">Theme</button></h2>
         <div class="conf-option">
