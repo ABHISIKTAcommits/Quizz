@@ -2,6 +2,7 @@
 
 ## Project Structure
 
+```
 Quizz/
 ├── index.html
 ├── quiz.js
@@ -14,6 +15,7 @@ Quizz/
 │ ├── lightbg.jpg
 │ └── quiz-over.png
 └── README.md
+```
 
 ## Description
 
