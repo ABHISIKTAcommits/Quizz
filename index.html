@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <!-- GoogleFont > Search - Timer > Static icon font-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -51,53 +48,38 @@
         <header class="quiz-header">
             <h2 class="quiz-title">Quiz Website</h2>
             <div class="quiz-timer">
-                <!--span is from Google font > inserting the icon-->
                 <span class="material-symbols-outlined">
-                    timelapse
+                    <!-- Add svg HimanshuM685-->>
                 </span>
                 <p class="time-dur">20s</p>
             </div>
         </header>
         <div class="quizcontent">
-            <h1 class="ques-text">Which country hosted the 2024 Summer Olympics?</h1>
-            <ul class="answer-opts">
-                <li class="answer-opt wrong">
-                    <p>Tokyo</p>
-                    <span class="material-symbols-outlined">
-                        cancel
-                    </span>
-                </li>
-                <li class="answer-opt correct">
-                    <p>Paris</p>
-                    <span class="material-symbols-outlined">
-                        check_circle
-                    </span>
-                </li>
-                <li class="answer-opt">
-                    <p>Los Angeles</p>
-                </li>
-                <li class="answer-opt">
-                    <p>London</p>
-                </li>
-            </ul>
+            <!-- Questions will be dynamically inserted here -->
         </div>
         <div class="quiz-footer">
-            <p class="ques-status"><b>2</b> of <b>10</b> Questions.</p>
+            <p class="ques-status"><b>1</b> of <b>10</b> Questions.</p>
             <button class="next-ques">
                 Next
                 <span class="material-symbols-outlined">
-                    arrow_right_alt
+                    <!-- Add svg HimanshuM685-->>
                 </span>
             </button>
         </div>
     </div>
-<div class="result-container">
-    <img src="public/assets/quiz-over.png" alt="" class="result-img">
-<h2 class="resutl-title">Quiz Completed!</h2>
-<p class="result-msg">You answered <b>3</b> out of <b>5</b> questions correctly. Great effort!</p>
-<button class="try-again">Start Over</button>
+    <div class="result-container">
+        <img src="public/assets/quiz-over.png" alt="" class="result-img">
+        <h2 class="result-title">Quiz Completed!</h2>
+        <p class="result-msg">You answered <b id="correct-answers"></b> out of <b id="total-questions"></b> questions correctly. Great effort!</p>
+        <p class="result-percentage">Your score: <b id="score-percentage"></b>%</p>
+        <button class="try-again" onclick="restartQuiz()">Start Over</button>
+    </div>
+    <div class="timeout-container">
+        <h2 class="timeout-title">Time's Up!</h2>
+        <p class="timeout-msg">You ran out of time. Better luck next time!</p>
+        <button class="try-again" onclick="restartQuiz()">Start Over</button>
+    </div>
     <script src="quiz.js"></script>
-</div>
 </body>
 
 </html>
